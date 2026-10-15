@@ -34,17 +34,17 @@
     </div></section>
     <section class="trust"><div class="wrap trust-row"><div class="trust-item"><span>🎀</span> Gifts for every occasion</div><div class="trust-item"><span>💳</span> Part advance, balance on delivery</div><div class="trust-item"><span>📍</span> Local delivery available</div><div class="trust-item"><span>💬</span> Friendly personal service</div></div></section>
     <section class="section"><div class="wrap"><div class="section-head"><div class="eyebrow">A little something for everyone</div><h2>Shop our categories</h2><p>Find your next thoughtful surprise in a few clicks.</p></div><div class="categories">
-      <button class="category" data-category="Gifts"><img loading="lazy" src="stock-photo-02.jpg" alt="Colorful wrapped gift"><span class="category-label">Gifts<small>For all the lovely people</small></span></button>
-      <button class="category" data-category="Toys"><img loading="lazy" src="stock-photo-03.jpg" alt="Colorful toys"><span class="category-label">Toys<small>Big fun for little ones</small></span></button>
-      <button class="category" data-category="Decoration items"><img loading="lazy" src="stock-photo-12.jpg" alt="Party decorations"><span class="category-label">Decoration items<small>Make every day a reason</small></span></button>
-      <button class="category" data-category="Bangles"><img loading="lazy" src="stock-photo-05.jpg" alt="Colorful bangles"><span class="category-label">Bangles<small>A little sparkle to wear</small></span></button>
+      
+      
+      
+      
       <button class="category" data-category="Customized gifts"><img loading="lazy" src="stock-photo-01.jpg" alt="Personalized gift"><span class="category-label">Customized gifts<small>Made personal for them</small></span></button>
-      <button class="category" data-category="Ear rings"><img loading="lazy" src="stock-photo-06.jpg" alt="Earrings"><span class="category-label">Ear rings<small>Finishing touches</small></span></button>
-      <button class="category" data-category="Chains"><img loading="lazy" src="stock-photo-07.jpg" alt="Necklace chains"><span class="category-label">Chains<small>Simple everyday shine</small></span></button>
+      
+      
       <button class="category" data-category="Airport Accessories"><img loading="lazy" src="stock-photo-08.jpg" alt="Travel bag and accessories"><span class="category-label">Airport Accessories<small>Travel essentials and accessories</small></span></button>
     </div></div></section>
     <section class="section products-section" id="shop"><div class="wrap"><div class="section-head"><div class="eyebrow">Picked with a smile</div><h2>Find your feel-good find</h2><p>Browse our favourites and add a little joy to your bag.</p></div>
-      <div class="products-toolbar"><div class="filters" id="filters"><button class="filter active" data-filter="All">All finds</button><button class="filter" data-filter="Gifts">Gifts</button><button class="filter" data-filter="Toys">Toys</button><button class="filter" data-filter="Decoration items">Decoration items</button><button class="filter" data-filter="Bangles">Bangles</button><button class="filter" data-filter="Customized gifts">Customized gifts</button><button class="filter" data-filter="Ear rings">Ear rings</button><button class="filter" data-filter="Chains">Chains</button><button class="filter" data-filter="Airport Accessories">Airport Accessories</button></div><input class="search" id="search" type="search" placeholder="Search the collection…" aria-label="Search products"></div>
+      <div class="products-toolbar"><div class="filters" id="filters"><button class="filter active" data-filter="All">All finds</button><button class="filter" data-filter="Customized gifts">Customized gifts</button><button class="filter" data-filter="Airport Accessories">Airport Accessories</button></div><input class="search" id="search" type="search" placeholder="Search the collection…" aria-label="Search products"></div>
       <div class="custom-gifts-note" id="customGiftsNote"><div><strong>Custom designs? Message us.</strong><small>Advance payment is required before designing.</small></div><a href="https://wa.me/918639234412?text=Hello%20Lucky%20Gift%20and%20Novelties%2C%20I%20would%20like%20to%20ask%20about%20a%20custom%20design." target="_blank" rel="noopener">Message on WhatsApp ↗</a></div>
       <div class="product-grid" id="productGrid"></div>
     </div></section>
@@ -62,15 +62,6 @@
   <script>
     // Update the products below with your current in-store stock and prices before publishing.
     const products=[
-      {id:1,name:'Surprise Gift Box',category:'Gifts',price:399,old:499,tag:'Bestseller',description:'A cheerful little box for someone special.',image:'stock-photo-02.jpg'},
-      {id:2,name:'Plush Teddy Bear',category:'Toys',price:549,old:null,tag:'Hug favourite',description:'The softest companion for a big bear hug.',image:'stock-photo-10.jpg'},
-      {id:3,name:'Celebration Balloon Set',category:'Decoration items',price:249,old:null,tag:'Party pick',description:'Bring a pop of colour to the celebration.',image:'stock-photo-04.jpg'},
-      {id:5,name:'Colour Pop Art Kit',category:'Toys',price:349,old:null,tag:'Creative fun',description:'A colourful activity for curious little hands.',image:'stock-photo-11.jpg'},
-      {id:6,name:'Birthday Gift Hamper',category:'Gifts',price:699,old:799,tag:'Extra special',description:'A ready-to-gift bundle for their big day.',image:'stock-photo-01.jpg'},
-      {id:7,name:'Party Decor Bundle',category:'Decoration items',price:449,old:null,tag:'Party ready',description:'Fun finishing touches for your next get-together.',image:'stock-photo-12.jpg'},
-      {id:9,name:'Colorful Bangle Set',category:'Bangles',price:249,old:null,tag:'Bright favourite',description:'A cheerful set to add colour to your look.',image:'stock-photo-05.jpg'},
-      {id:10,name:'Everyday Ear Rings',category:'Ear rings',price:199,old:null,tag:'Easy elegance',description:'A lovely little pair for everyday wear.',image:'stock-photo-06.jpg'},
-      {id:11,name:'Everyday Chain',category:'Chains',price:399,old:null,tag:'Simple shine',description:'A delicate chain to finish your outfit.',image:'stock-photo-07.jpg'},
       {id:12,name:'Black Stocking',category:'Airport Accessories',price:80,variants:[{price:80,inStock:true},{price:100,inStock:true}],tag:'2 quality options',description:'Black pantyhose. Choose the quality that suits you.',image:'black-stocking-main.jpg',secondImage:'black-stocking-detail.jpg'},
       {id:13,name:'Blue Stocking',category:'Airport Accessories',price:100,defaultPrice:100,variants:[{price:80,inStock:false},{price:100,inStock:true}],tag:'₹80 option sold out',description:'Navy blue pantyhose. ₹80 quality is out of stock.',image:'blue-stocking-main.jpg',secondImage:'blue-stocking-detail.jpg'},
       {id:14,name:'Skin Color Stocking',category:'Airport Accessories',price:80,tag:'Everyday essential',description:'Skin-tone pantyhose.',image:'skin-stocking-main.jpg',secondImage:'skin-stocking-detail.jpg'},
