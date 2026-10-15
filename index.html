@@ -60,6 +60,20 @@
   <div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderTitle"><div class="modal-card"><div class="modal-head"><h2 id="orderTitle">Almost there! 🎁</h2><button class="close-btn" id="modalClose" aria-label="Close order form">×</button></div><p style="color:var(--muted);font-size:12px;line-height:1.6;margin:8px 0">Share your details and we’ll open WhatsApp with your order ready to send.</p><form id="orderForm"><div class="form-field"><label for="customerName">Your name</label><input id="customerName" required placeholder="Name"></div><div class="form-field"><label for="customerPhone">Phone number</label><input id="customerPhone" type="tel" required placeholder="Mobile number"></div><div class="form-field"><label for="customerAddress">Delivery address</label><textarea id="customerAddress" required placeholder="House / street, area, landmark"></textarea></div><div class="form-field"><label>Payment plan</label><div class="pay-option" style="background:var(--peach);border-color:var(--orange);cursor:default">✓ &nbsp; Pay a partial advance before dispatch; the remaining balance is due on delivery.</div></div><div class="order-total" id="orderTotal"></div><button class="button modal-submit" type="submit">Continue on WhatsApp ↗</button><p class="tiny-note">Piyush will confirm the advance amount and payment method on WhatsApp. Your order is confirmed after the shop confirms it.</p></form></div></div>
   <div class="toast" id="toast" role="status"></div>
   <script>
+    // Retry an image once after a transient mobile connection failure.
+    window.addEventListener('error', event => {
+      const image = event.target;
+      if (!(image instanceof HTMLImageElement) || image.dataset.imageRetry === 'done') return;
+      image.dataset.imageRetry = 'done';
+      const source = image.currentSrc || image.src;
+      if (!source) return;
+      setTimeout(() => {
+        const separator = source.includes('?') ? '&' : '?';
+        image.src = source + separator + 'image-retry=1';
+      }, 600);
+    }, true);
+  </script>
+  <script>
     // Update the products below with your current in-store stock and prices before publishing.
     const products=[
       {id:12,name:'Black Stocking',category:'Airport Accessories',price:80,variants:[{price:80,inStock:true},{price:100,inStock:true}],tag:'2 quality options',description:'Black pantyhose. Choose the quality that suits you.',image:'black-stocking-main.jpg',secondImage:'black-stocking-detail.jpg'},
