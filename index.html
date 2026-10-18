@@ -29,7 +29,7 @@
     .matte-lipstick-card .shade-swatch.selected{outline:2px solid #27221e;outline-offset:1px}
     .matte-lipstick-card .shade-chip{background-color:var(--shade);filter:none;-webkit-filter:none}
     .shade-swatch.named-shade .shade-dot{background-color:var(--shade)!important;opacity:1;filter:none;box-shadow:none;border:1px solid #0002}
-    .skin-tint-card .shade-swatches.named-shades{grid-template-columns:repeat(4,38px);gap:9px;justify-content:start}
+    .skin-tint-card .shade-swatches.named-shades{grid-template-columns:repeat(4,38px);gap:12px;justify-content:start}
     .skin-tint-card .shade-swatch.named-shade{width:38px;height:38px;min-height:38px;padding:0;justify-content:center;gap:0}
     .skin-tint-card .shade-swatch.named-shade>span:not(.shade-dot){display:none}
     .skin-tint-card .shade-swatch.named-shade .shade-dot{width:34px;height:34px;flex-basis:34px}
@@ -45,6 +45,11 @@
       .product-card.vinyl-gloss-card .shade-swatch.named-shade{width:32px;height:32px;min-height:32px;padding:0;gap:0}
       .product-card.vinyl-gloss-card .shade-swatch.named-shade .shade-dot{width:28px;height:28px;flex-basis:28px}
       .product-card.vinyl-gloss-card .selected-shade{font-size:10px;flex-wrap:wrap}
+    }
+    @media(max-width:680px){
+      .skin-tint-card .shade-swatches.named-shades{grid-template-columns:repeat(3,30px);gap:11px;justify-content:start}
+      .skin-tint-card .shade-swatch.named-shade{width:30px;height:30px;min-height:30px}
+      .skin-tint-card .shade-swatch.named-shade .shade-dot{width:25px;height:25px;flex-basis:25px}
     }
   </style>
 </head>
