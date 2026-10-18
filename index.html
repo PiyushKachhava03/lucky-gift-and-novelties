@@ -70,6 +70,12 @@
       .product-card:not(.matte-lipstick-card):not(.vinyl-gloss-card) .shade-swatches:not(.named-shades){gap:9px!important}
       .product-card:not(.matte-lipstick-card):not(.vinyl-gloss-card) .shade-swatches.named-shades{column-gap:9px!important;row-gap:10px!important}
     }
+    .product-card .shade-swatches:not(.named-shades){grid-template-columns:repeat(auto-fit,24px)!important;gap:19px!important}
+    .product-card .shade-swatches.named-shades{grid-template-columns:repeat(auto-fit,minmax(30px,38px))!important;gap:19px!important}
+    @media(max-width:680px){
+      .product-card .shade-swatches:not(.named-shades){grid-template-columns:repeat(auto-fit,24px)!important;gap:19px!important}
+      .product-card .shade-swatches.named-shades{grid-template-columns:repeat(auto-fit,minmax(25px,30px))!important;gap:19px!important}
+    }
   </style>
 </head>
 <body>
