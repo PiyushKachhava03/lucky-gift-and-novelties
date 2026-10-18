@@ -64,6 +64,12 @@
       .tap-shade-card .shade-swatch.named-shade{width:30px;height:30px;min-height:30px}
       .tap-shade-card .shade-swatch.named-shade .shade-dot{width:25px;height:25px;flex-basis:25px}
     }
+    .product-card .shade-swatches:not(.named-shades){grid-template-columns:repeat(auto-fit,24px);gap:10px!important}
+    .product-card .shade-swatches.named-shades{column-gap:10px!important;row-gap:10px!important}
+    @media(max-width:680px){
+      .product-card .shade-swatches:not(.named-shades){gap:9px!important}
+      .product-card .shade-swatches.named-shades{column-gap:9px!important;row-gap:10px!important}
+    }
   </style>
 </head>
 <body>
